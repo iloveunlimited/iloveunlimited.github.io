@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>良耕善緣 × 愛無限</title>
 
 <style>
@@ -15,58 +16,51 @@ font-family:"Microsoft JhengHei",sans-serif;
 }
 
 body{
-background:#fff7fb;
+background:#fff6fa;
 color:#333;
 }
 
 .hero{
-
-background:linear-gradient(
-to bottom,
-#fff6f9 0%,
-#ffe4ee 50%,
-#ffd5e4 100%
-);
-
 text-align:center;
-padding-bottom:60px;
+padding:30px 20px 50px;
+background:#f7d4e1;
 }
 
-.logo{
+.hero-logo{
 width:100%;
-max-width:1200px;
+max-width:900px;
 display:block;
 margin:0 auto;
+border-radius:30px;
 }
 
-.hero-content{
-margin-top:-20px;
-}
-
-.hero h1{
+.hero-title{
 font-size:64px;
 font-weight:900;
-color:#ff3c80;
-margin-bottom:10px;
+color:#ff4f87;
+margin-top:15px;
 }
 
-.hero p{
-font-size:30px;
-font-weight:700;
+.hero-subtitle{
+font-size:28px;
+margin-top:15px;
+font-weight:600;
 color:#444;
-margin-bottom:25px;
+}
+
+.btn-area{
+margin-top:30px;
 }
 
 .btn{
 display:inline-block;
 padding:16px 38px;
-margin:8px;
 border-radius:50px;
+text-decoration:none;
 font-size:22px;
 font-weight:bold;
-text-decoration:none;
-color:white;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+margin:8px;
+color:#fff;
 }
 
 .btn-pink{
@@ -77,42 +71,29 @@ background:#ff4f87;
 background:#06C755;
 }
 
-.section{
+.container{
 max-width:1200px;
 margin:auto;
 padding:25px;
 }
 
 .card{
-
 background:white;
-
-border-radius:20px;
-
 padding:35px;
-
-margin-bottom:25px;
-
+border-radius:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
-
+margin-bottom:25px;
 }
 
 .card h2{
-
-font-size:34px;
-
 color:#ff4f87;
-
+font-size:36px;
 margin-bottom:15px;
-
 }
 
 .card p{
-
 font-size:20px;
-
-line-height:1.8;
-
+line-height:1.9;
 }
 
 .banner{
@@ -121,60 +102,51 @@ border-radius:20px;
 margin-top:20px;
 }
 
-.photo{
+.donate-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:20px;
+}
+
+.donate-grid img{
 width:100%;
 border-radius:20px;
-margin-top:20px;
 }
 
 .notice{
-
 background:#fff0f7;
-
-border:2px dashed #ff8ab3;
-
+border:2px dashed #ff9abc;
 padding:25px;
-
 border-radius:15px;
-
 margin-top:20px;
-
-font-size:20px;
-
+font-size:22px;
+line-height:2;
 }
 
 footer{
-
-background:#ff7eb3;
-
+background:#ff7ea8;
 color:white;
-
 text-align:center;
-
 padding:25px;
-
 font-size:18px;
-
+margin-top:30px;
 }
 
 @media(max-width:768px){
 
-.logo{
-width:100%;
-}
-
-.hero h1{
+.hero-title{
 font-size:40px;
 }
 
-.hero p{
+.hero-subtitle{
 font-size:20px;
 }
 
 .btn{
 display:block;
 width:280px;
-margin:12px auto;
+margin:10px auto;
 font-size:18px;
 }
 
@@ -186,37 +158,48 @@ font-size:28px;
 font-size:17px;
 }
 
+.donate-grid{
+grid-template-columns:1fr;
+}
+
+.hero-logo{
+max-width:100%;
+}
+
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="hero">
+<section class="hero">
 
-<img src="logo.png?v=20260621" class="logo">
+<img src="logo.png?v=20260621" class="hero-logo">
 
-<div class="hero-content">
+<div class="hero-title">
+良耕善緣 × 愛無限
+</div>
 
-<h1>良耕善緣 × 愛無限</h1>
+<div class="hero-subtitle">
+用愛灌溉希望・用行動傳遞溫暖
+</div>
 
-<p>用愛灌溉希望・用行動傳遞溫暖</p>
+<div class="btn-area">
 
-<a href="https://line.me/ti/p/-x34CcQhRN" target="_blank" class="btn btn-pink">
+<a href="https://line.me/ti/p/-x34CcQhRN" class="btn btn-pink" target="_blank">
 ❤️ 我要捐贈物資
 </a>
 
-<a href="https://line.me/ti/p/-x34CcQhRN" target="_blank" class="btn btn-green">
+<a href="https://line.me/ti/p/-x34CcQhRN" class="btn btn-green" target="_blank">
 LINE 聯絡社群小助手
 </a>
 
 </div>
 
-</div>
+</section>
 
-<div class="section">
+<div class="container">
 
 <div class="card">
 
@@ -236,12 +219,9 @@ LINE 聯絡社群小助手
 <h2>公益成果展示</h2>
 
 <p>
-每一次捐贈，
-都是一份溫暖的延續。
-
+每一次捐贈，都是一份溫暖的延續。
 感謝每一位善友的參與，
-讓愛心不只是停留在想法，
-而是真正化為實際行動。
+讓愛心不只是停留在想法，而是真正化為實際行動。
 </p>
 
 <img src="banner.jpg" class="banner">
@@ -252,9 +232,13 @@ LINE 聯絡社群小助手
 
 <h2>愛心捐贈紀錄</h2>
 
-<img src="donate1.jpg" class="photo">
+<div class="donate-grid">
 
-<img src="donate2.jpg" class="photo">
+<img src="donate1.jpg">
+
+<img src="donate2.jpg">
+
+</div>
 
 </div>
 
@@ -263,28 +247,23 @@ LINE 聯絡社群小助手
 <h2>我要捐贈</h2>
 
 <p>
-如果家中有閒置但仍堪用的衣物、
-書籍、
-生活用品等物資，
-
-歡迎與社群小助手聯繫，
+如果家中有閒置但仍可使用的衣物、書籍、生活用品等物資，
+歡迎與我們聯繫，
 一起讓物品發揮更大的價值。
 </p>
 
 <div class="notice">
 
-💗 一份物資，一份溫暖<br><br>
-
-💗 一份善意，一份希望<br><br>
-
+💗 一份物資，一份溫暖<br>
+💗 一份善意，一份希望<br>
 💗 讓閒置物品重新發揮價值
 
 </div>
 
 <br>
 
-<a href="https://line.me/ti/p/-x34CcQhRN" target="_blank" class="btn btn-green">
-立即聯繫小編
+<a href="https://line.me/ti/p/-x34CcQhRN" class="btn btn-green" target="_blank">
+立即聯絡小編
 </a>
 
 </div>
@@ -292,9 +271,7 @@ LINE 聯絡社群小助手
 </div>
 
 <footer>
-
 © 2026 良耕善緣 × 愛無限 All Rights Reserved.
-
 </footer>
 
 </body>
