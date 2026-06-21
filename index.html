@@ -18,19 +18,20 @@ background:#fff6fa;
 color:#333;
 }
 
+/* 首頁主視覺 */
 .hero{
-height:1080px;
-background-image:url("logo.png?v=20260623");
-background-size:contain;
-background-position:center top;
+height:820px;
+background-image:url("logo.png?v=20260624");
+background-size:cover;
+background-position:center -80px;
 background-repeat:no-repeat;
-background-color:#fce5ee;
 display:flex;
 align-items:flex-end;
 justify-content:center;
-padding-bottom:120px;
+padding:0 20px 70px;
 }
 
+/* 按鈕區 */
 .btn-area{
 text-align:center;
 }
@@ -55,6 +56,7 @@ background:#ff4f87;
 background:#06C755;
 }
 
+/* 內容區 */
 .container{
 max-width:1200px;
 margin:auto;
@@ -117,31 +119,72 @@ font-size:18px;
 margin-top:30px;
 }
 
+/* 平板 */
+@media(max-width:1024px){
+.hero{
+height:700px;
+background-position:center top;
+padding-bottom:55px;
+}
+}
+
+/* 手機版 */
 @media(max-width:768px){
 .hero{
-height:560px;
-background-size:contain;
-padding-bottom:35px;
+height:520px;
+background-size:cover;
+background-position:center top;
+padding:0 15px 35px;
 }
 
 .btn{
 display:block;
-width:280px;
-margin:10px auto;
-font-size:17px;
-padding:13px 25px;
+width:260px;
+margin:8px auto;
+font-size:16px;
+padding:12px 20px;
+}
+
+.container{
+padding:25px 15px;
+}
+
+.card{
+padding:22px;
+border-radius:16px;
+}
+
+.card h2{
+font-size:26px;
+}
+
+.card p{
+font-size:16px;
+line-height:1.8;
 }
 
 .donate-grid{
 grid-template-columns:1fr;
 }
 
-.card h2{
-font-size:28px;
+.notice{
+font-size:16px;
+padding:18px;
+}
 }
 
-.card p{
-font-size:17px;
+/* 小手機 */
+@media(max-width:430px){
+.hero{
+height:460px;
+background-position:center top;
+padding-bottom:25px;
+}
+
+.btn{
+width:240px;
+font-size:15px;
+padding:11px 16px;
 }
 }
 </style>
@@ -174,14 +217,14 @@ font-size:17px;
 感謝每一位善友的參與，讓愛心不只是停留在想法，
 而是真正化為實際行動。
 </p>
-<img src="banner.jpg?v=20260623" class="banner">
+<img src="banner.jpg?v=20260624" class="banner">
 </div>
 
 <div class="card">
 <h2>愛心捐贈紀錄</h2>
 <div class="donate-grid">
-<img src="donate1.jpg?v=20260623">
-<img src="donate2.jpg?v=20260623">
+<img src="donate1.jpg?v=20260624">
+<img src="donate2.jpg?v=20260624">
 </div>
 </div>
 
