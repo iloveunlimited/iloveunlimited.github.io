@@ -6,187 +6,36 @@
 <title>良耕善緣 × 愛無限</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Microsoft JhengHei",sans-serif;
-}
-
-body{
-background:#fff5f9;
-color:#333;
-}
-
-.hero{
-position:relative;
-width:100%;
-height:800px;
-background-image:url("logo.png?v=20260624");
-background-size:cover;
-background-position:center center;
-background-repeat:no-repeat;
-display:flex;
-justify-content:center;
-align-items:flex-end;
-padding-bottom:50px;
-}
-
-.hero-buttons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero-buttons a,
-.btn{
-padding:18px 40px;
-border-radius:50px;
-color:#fff;
-font-size:24px;
-font-weight:bold;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
-display:inline-block;
-}
-
-.btn-pink{background:#ff4f87;}
-.btn-green{background:#06C755;}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:30px;
-}
-
-.card{
-background:#fff;
-padding:30px;
-border-radius:20px;
-margin-bottom:25px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.card h2{
-color:#ff4f87;
-font-size:34px;
-margin-bottom:15px;
-}
-
-.card p{
-font-size:20px;
-line-height:1.9;
-}
-
-.banner{
-width:100%;
-border-radius:20px;
-margin-top:20px;
-}
-
-.donate-grid{
-display:flex;
-flex-direction:column;
-gap:25px;
-max-width:900px;
-margin:20px auto 0 auto;
-}
-
-.donate-grid img{
-width:100%;
-border-radius:20px;
-display:block;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.notice{
-background:#fff0f6;
-border:2px dashed #ff9cc1;
-padding:25px;
-border-radius:15px;
-margin-top:20px;
-font-size:20px;
-line-height:2;
-}
-
-.item-list{
-font-size:20px;
-line-height:2.1;
-}
-
-.line-float{
-position:fixed;
-right:20px;
-bottom:20px;
-width:65px;
-height:65px;
-background:#06C755;
-color:white;
-font-size:30px;
-text-decoration:none;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-z-index:999;
-}
-
-footer{
-background:#ff7fb5;
-color:white;
-text-align:center;
-padding:20px;
-font-size:18px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft JhengHei",sans-serif}
+body{background:#fff5f9;color:#333}
+.hero{position:relative;width:100%;height:800px;background-image:url("logo.png?v=20260624");background-size:cover;background-position:center center;background-repeat:no-repeat;display:flex;justify-content:center;align-items:flex-end;padding-bottom:50px}
+.hero-buttons{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.hero-buttons a,.btn{padding:18px 40px;border-radius:50px;color:#fff;font-size:24px;font-weight:bold;text-decoration:none;box-shadow:0 5px 20px rgba(0,0,0,.15);display:inline-block}
+.btn-pink{background:#ff4f87}.btn-green{background:#06C755}
+.container{max-width:1200px;margin:auto;padding:30px}
+.card{background:#fff;padding:30px;border-radius:20px;margin-bottom:25px;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+.card h2{color:#ff4f87;font-size:34px;margin-bottom:15px}
+.card p{font-size:20px;line-height:1.9}
+.banner{width:100%;border-radius:20px;margin-top:20px}
+.donate-grid{display:flex;flex-direction:column;gap:25px;max-width:900px;margin:20px auto 0 auto}
+.donate-grid img{width:100%;border-radius:20px;display:block;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+.caption{text-align:center;color:#777;font-size:17px;margin-top:8px}
+.notice{background:#fff0f6;border:2px dashed #ff9cc1;padding:25px;border-radius:15px;margin-top:20px;font-size:20px;line-height:2}
+.item-list{font-size:20px;line-height:2.1}
+.faq-box{background:#fff7fb;border-left:6px solid #ff7fb5;padding:20px;border-radius:12px;margin-bottom:15px}
+.faq-box strong{color:#ff4f87;font-size:20px}
+.line-float{position:fixed;right:20px;bottom:20px;width:65px;height:65px;background:#06C755;color:white;font-size:30px;text-decoration:none;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 15px rgba(0,0,0,.2);z-index:999}
+footer{background:#ff7fb5;color:white;text-align:center;padding:20px;font-size:18px}
 @media(max-width:768px){
-.hero{
-height:420px;
-background-size:cover;
-background-position:center top;
-padding-bottom:20px;
-}
-
-.hero-buttons{
-flex-direction:column;
-gap:12px;
-}
-
-.hero-buttons a,
-.btn{
-font-size:18px;
-padding:14px 25px;
-width:260px;
-text-align:center;
-}
-
-.container{
-padding:15px;
-}
-
-.card{
-padding:20px;
-}
-
-.card h2{
-font-size:28px;
-}
-
-.card p,
-.item-list,
-.notice{
-font-size:16px;
-}
-
-.line-float{
-width:56px;
-height:56px;
-font-size:26px;
-right:15px;
-bottom:15px;
-}
+.hero{height:420px;background-size:cover;background-position:center top;padding-bottom:20px}
+.hero-buttons{flex-direction:column;gap:12px}
+.hero-buttons a,.btn{font-size:18px;padding:14px 25px;width:260px;text-align:center}
+.container{padding:15px}
+.card{padding:20px}
+.card h2{font-size:28px}
+.card p,.item-list,.notice,.faq-box strong{font-size:16px}
+.caption{font-size:14px}
+.line-float{width:56px;height:56px;font-size:26px;right:15px;bottom:15px}
 }
 </style>
 </head>
@@ -204,28 +53,27 @@ bottom:15px;
 
 <div class="card">
 <h2>關於我們</h2>
-<p>
-良耕善緣 × 愛無限致力於推動物資捐贈與公益關懷，
-希望透過每一份善意，
-將生活中用不到但仍有價值的物品，
-送到真正需要的人手中。
-</p>
+<p>良耕善緣 × 愛無限致力於推動物資捐贈與公益關懷，希望透過每一份善意，將生活中用不到但仍有價值的物品，送到真正需要的人手中。</p>
 </div>
 
 <div class="card">
 <h2>公益成果展示</h2>
-<p>
-每一次捐贈，都是一份溫暖的延續。感謝每一位善友的參與，
-讓愛心不只是停留在想法，而是真正化為實際行動。
-</p>
+<p>每一次捐贈，都是一份溫暖的延續。感謝每一位善友的參與，讓愛心不只是停留在想法，而是真正化為實際行動。</p>
 <img src="banner.jpg?v=20260624" class="banner">
+<div class="caption">公益成果紀錄｜感謝善友共同響應</div>
 </div>
 
 <div class="card">
 <h2>愛心捐贈紀錄</h2>
 <div class="donate-grid">
+<div>
 <img src="donate1.jpg?v=20260624">
+<div class="caption">愛心物資捐贈回饋紀錄</div>
+</div>
+<div>
 <img src="donate2.jpg?v=20260624">
+<div class="caption">善友共同參與，讓物資發揮更大價值</div>
+</div>
 </div>
 </div>
 
@@ -264,11 +112,33 @@ bottom:15px;
 </div>
 
 <div class="card">
+<h2>常見問題 FAQ</h2>
+
+<div class="faq-box">
+<strong>Q：物資一定要全新的嗎？</strong>
+<p>不一定，只要是乾淨、完整、仍可正常使用的物品，都可以先與小編確認。</p>
+</div>
+
+<div class="faq-box">
+<strong>Q：可以捐二手衣物或書籍嗎？</strong>
+<p>可以，建議先整理乾淨並確認沒有破損、發霉或嚴重污漬。</p>
+</div>
+
+<div class="faq-box">
+<strong>Q：我要怎麼知道物資是否適合捐贈？</strong>
+<p>可以先私訊社群小助手，拍照或簡單描述物品狀況，我們會協助確認。</p>
+</div>
+
+</div>
+
+<div class="card">
+<h2>公益聲明</h2>
+<p>本團體以公益物資募集與關懷分享為主，所有捐贈物資將依實際需求協助媒合與送達，讓每一份善意能被妥善傳遞。</p>
+</div>
+
+<div class="card">
 <h2>我要捐贈</h2>
-<p>
-如果家中有閒置但仍可使用的衣物、書籍、生活用品等物資，
-歡迎與我們聯繫，一起讓物品發揮更大的價值。
-</p>
+<p>如果家中有閒置但仍可使用的衣物、書籍、生活用品等物資，歡迎與我們聯繫，一起讓物品發揮更大的價值。</p>
 
 <div class="notice">
 💗 一份物資，一份溫暖<br>
