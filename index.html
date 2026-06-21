@@ -6,7 +6,6 @@
 <title>良耕善緣 × 愛無限</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -19,22 +18,17 @@ background:#fff5f9;
 color:#333;
 }
 
-/* 首頁主視覺 */
-
 .hero{
 position:relative;
 width:100%;
 height:800px;
-
 background-image:url("logo.png?v=20260624");
 background-size:cover;
 background-position:center center;
 background-repeat:no-repeat;
-
 display:flex;
 justify-content:center;
 align-items:flex-end;
-
 padding-bottom:50px;
 }
 
@@ -45,7 +39,8 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-.hero-buttons a{
+.hero-buttons a,
+.btn{
 padding:18px 40px;
 border-radius:50px;
 color:#fff;
@@ -53,17 +48,11 @@ font-size:24px;
 font-weight:bold;
 text-decoration:none;
 box-shadow:0 5px 20px rgba(0,0,0,.15);
+display:inline-block;
 }
 
-.btn-pink{
-background:#ff4f87;
-}
-
-.btn-green{
-background:#06C755;
-}
-
-/* 內容區 */
+.btn-pink{background:#ff4f87;}
+.btn-green{background:#06C755;}
 
 .container{
 max-width:1200px;
@@ -96,8 +85,6 @@ border-radius:20px;
 margin-top:20px;
 }
 
-/* 愛心捐贈紀錄改上下排列 */
-
 .donate-grid{
 display:flex;
 flex-direction:column;
@@ -123,6 +110,29 @@ font-size:20px;
 line-height:2;
 }
 
+.item-list{
+font-size:20px;
+line-height:2.1;
+}
+
+.line-float{
+position:fixed;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#06C755;
+color:white;
+font-size:30px;
+text-decoration:none;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+z-index:999;
+}
+
 footer{
 background:#ff7fb5;
 color:white;
@@ -131,10 +141,7 @@ padding:20px;
 font-size:18px;
 }
 
-/* 手機版 */
-
 @media(max-width:768px){
-
 .hero{
 height:420px;
 background-size:cover;
@@ -147,7 +154,8 @@ flex-direction:column;
 gap:12px;
 }
 
-.hero-buttons a{
+.hero-buttons a,
+.btn{
 font-size:18px;
 padding:14px 25px;
 width:260px;
@@ -166,114 +174,118 @@ padding:20px;
 font-size:28px;
 }
 
-.card p{
-font-size:16px;
-}
-
+.card p,
+.item-list,
 .notice{
 font-size:16px;
 }
 
+.line-float{
+width:56px;
+height:56px;
+font-size:26px;
+right:15px;
+bottom:15px;
 }
-
+}
 </style>
 </head>
 
 <body>
 
 <section class="hero">
-
 <div class="hero-buttons">
-
-<a href="https://line.me/ti/p/-x34CcQhRN" class="btn-pink">
-❤️ 我要捐贈物資
-</a>
-
-<a href="https://line.me/ti/p/-x34CcQhRN" class="btn-green">
-LINE 聯絡社群小助手
-</a>
-
+<a href="https://line.me/ti/p/-x34CcQhRN" class="btn-pink" target="_blank">❤️ 我要捐贈物資</a>
+<a href="https://line.me/ti/p/-x34CcQhRN" class="btn-green" target="_blank">LINE 聯絡社群小助手</a>
 </div>
-
 </section>
 
 <div class="container">
 
 <div class="card">
-
 <h2>關於我們</h2>
-
 <p>
 良耕善緣 × 愛無限致力於推動物資捐贈與公益關懷，
 希望透過每一份善意，
 將生活中用不到但仍有價值的物品，
 送到真正需要的人手中。
 </p>
-
 </div>
 
 <div class="card">
-
 <h2>公益成果展示</h2>
-
 <p>
-每一次捐贈，
-都是一份溫暖的延續。
-
-感謝每一位善友的參與，
-讓愛心不只是停留在想法，
-而是真正化為實際行動。
+每一次捐贈，都是一份溫暖的延續。感謝每一位善友的參與，
+讓愛心不只是停留在想法，而是真正化為實際行動。
 </p>
-
 <img src="banner.jpg?v=20260624" class="banner">
-
 </div>
 
 <div class="card">
-
 <h2>愛心捐贈紀錄</h2>
-
 <div class="donate-grid">
-
 <img src="donate1.jpg?v=20260624">
-
 <img src="donate2.jpg?v=20260624">
-
-<!-- 之後新增照片直接複製下面一行 -->
-<!-- <img src="donate3.jpg?v=20260624"> -->
-<!-- <img src="donate4.jpg?v=20260624"> -->
-
 </div>
-
 </div>
 
 <div class="card">
+<h2>捐贈流程</h2>
+<div class="item-list">
+① 整理家中閒置物資<br>
+② 私訊社群小助手<br>
+③ 確認可捐贈項目<br>
+④ 安排捐贈方式<br>
+⑤ 將愛心送到需要的人手中
+</div>
+</div>
 
+<div class="card">
+<h2>可捐贈物資</h2>
+<div class="item-list">
+👕 衣物服飾<br>
+📚 書籍教材<br>
+🧸 玩具用品<br>
+🧻 生活用品<br>
+🎒 文具用品<br>
+🍜 長期保存食品
+</div>
+</div>
+
+<div class="card">
+<h2>不適合捐贈物資</h2>
+<div class="item-list">
+❌ 破損衣物<br>
+❌ 發霉書籍<br>
+❌ 過期食品<br>
+❌ 故障電器<br>
+❌ 嚴重污損用品
+</div>
+</div>
+
+<div class="card">
 <h2>我要捐贈</h2>
-
 <p>
-如果家中有閒置但仍可使用的衣物、
-書籍、生活用品等物資，
-歡迎與我們聯繫，
-一起讓物品發揮更大的價值。
+如果家中有閒置但仍可使用的衣物、書籍、生活用品等物資，
+歡迎與我們聯繫，一起讓物品發揮更大的價值。
 </p>
 
 <div class="notice">
-
 💗 一份物資，一份溫暖<br>
 💗 一份善意，一份希望<br>
 💗 讓閒置物品重新發揮價值
+</div>
 
+<br>
+<a href="https://line.me/ti/p/-x34CcQhRN" class="btn btn-green" target="_blank">立即聯絡小編</a>
 </div>
 
 </div>
 
-</div>
+<a href="https://line.me/ti/p/-x34CcQhRN" class="line-float" target="_blank">💬</a>
 
 <footer>
-
 © 2026 良耕善緣 × 愛無限 All Rights Reserved.
-
 </footer>
 
 </body>
